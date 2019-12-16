@@ -104,7 +104,7 @@ spec:
             privileged: false
             readOnlyRootFilesystem: false
             allowPrivilegeEscalation: false
-          terminationGracePeriodSeconds: 60
+      terminationGracePeriodSeconds: 60
       dnsPolicy: ClusterFirst
       serviceAccountName: websphere
       serviceAccount: websphere

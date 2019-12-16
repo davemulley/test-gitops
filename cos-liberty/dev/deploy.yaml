@@ -105,9 +105,9 @@ spec:
             readOnlyRootFilesystem: false
             allowPrivilegeEscalation: false
           terminationGracePeriodSeconds: 60
-          serviceAccountName: websphere
-          serviceAccount: websphere
-          securityContext:
-            runAsUser: 1001
-            runAsNonRoot: true
-
+      dnsPolicy: ClusterFirst
+      serviceAccountName: websphere
+      serviceAccount: websphere
+      securityContext:
+        runAsUser: 1001
+        runAsNonRoot: true

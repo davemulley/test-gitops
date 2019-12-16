@@ -26,6 +26,25 @@ spec:
   type: ClusterIP
   sessionAffinity: None
 ---
+kind: Route
+apiVersion: route.openshift.io/v1
+metadata:
+  name: cos-liberty
+  namespace: liberty-test
+  labels:
+    application: cos-liberty
+spec:
+  host: liberty-test.apps.gse-ocp-311.rtp.raleigh.ibm.com
+  to:
+    kind: Service
+    name: cos-liberty
+    weight: 100
+  port:
+    targetPort: 9443-tcp
+  tls:
+    termination: passthrough
+  wildcardPolicy: None
+---
 kind: DeploymentConfig
 apiVersion: apps.openshift.io/v1
 metadata:

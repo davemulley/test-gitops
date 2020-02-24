@@ -44,8 +44,6 @@ spec:
   tls:
     termination: passthrough
   wildcardPolicy: None
-status:
-  ingress: []
 ---
 kind: DeploymentConfig
 apiVersion: apps.openshift.io/v1

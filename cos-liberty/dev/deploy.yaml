@@ -88,7 +88,7 @@ spec:
               value: db2inst1
             - name: DB2_PASSWORD
               value: db2inst1
-          image: image-registry.openshift-image-registry.svc:5000/cos-liberty-dev/cos-liberty@sha256:f00dd769ac27bf403f69df0d322ff1576be4339510578e91f34abc232de0be86
+          image: image-registry.openshift-image-registry.svc:5000/cos-liberty-dev/cos-liberty:latest
           imagePullPolicy: Always
           livenessProbe:
             tcpSocket:

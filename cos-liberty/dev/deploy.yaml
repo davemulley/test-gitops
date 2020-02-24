@@ -2,7 +2,7 @@ kind: Service
 apiVersion: v1
 metadata:
   name: cos-liberty
-  namespace: cos-liberty
+  namespace: cos-liberty-dev
   annotations:
     description: The web server's http port.
   labels:
@@ -30,7 +30,7 @@ kind: Route
 apiVersion: route.openshift.io/v1
 metadata:
   name: cos-liberty
-  namespace: cos-liberty
+  namespace: cos-liberty-dev
   labels:
     application: cos-liberty
 spec:
@@ -51,7 +51,7 @@ kind: DeploymentConfig
 apiVersion: apps.openshift.io/v1
 metadata:
   name: cos-liberty
-  namespace: cos-liberty
+  namespace: cos-liberty-dev
   labels:
     application: cos-liberty
 spec:

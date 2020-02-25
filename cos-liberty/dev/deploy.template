@@ -88,7 +88,7 @@ spec:
               value: db2inst1
             - name: DB2_PASSWORD
               value: db2inst1
-          image: <DEPLOY_IMAGE>
+          image: <DOCKER_IMAGE>
           imagePullPolicy: Always
           livenessProbe:
             tcpSocket:

@@ -34,7 +34,6 @@ metadata:
   labels:
     application: cos-liberty
 spec:
-  host: cos-liberty-cos-liberty-dev.apps.appmod.ocp.csplab.local
   to:
     kind: Service
     name: cos-liberty

@@ -34,7 +34,7 @@ metadata:
   labels:
     application: cos-liberty
 spec:
-  host: cos-liberty-cos-liberty-dev.gse-appmod-0143c5dd31acd8e030a1d6e0ab1380e3-0000.us-south.containers.appdomain.cloud
+#  host: cos-liberty-cos-liberty-dev.gse-appmod-0143c5dd31acd8e030a1d6e0ab1380e3-0000.us-south.containers.appdomain.cloud
   to:
     kind: Service
     name: cos-liberty
